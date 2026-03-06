@@ -43,3 +43,10 @@ Plan for this session:
 - Implement history references using $n so previous results could be reused.
 - Ensure errors were handled properly, such as division by zero or invalid expressions.
 - Test the calculator with several valid and invalid inputs.
+## 2026-03-06 (End of Session)
+
+Session reflection:
+In this session I implemented the core functionality of the prefix calculator. The program can now evaluate prefix expressions, handle operators (+, *, /, and unary -), and maintain a history of results using $n references. I also tested several valid and invalid expressions to verify the evaluator works correctly.
+
+Next session plans:
+Tomorrow I will implement batch mode support, create the README file for submission, and perform additional testing to ensure the program fully meets the project requirements.
