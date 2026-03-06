@@ -1,5 +1,11 @@
 #lang racket
 
+(define args (vector->list (current-command-line-arguments)))
+
+(define interactive?
+  (not (or (member "-b" args)
+           (member "--batch" args))))
+
 ;; Helper functions
 
 (define (skip-spaces chars)
@@ -117,7 +123,8 @@
 ;; Main evaluation loop
 
 (define (eval-loop history)
-  (display "> ")
+  (when interactive?
+  (display "> "))
   (define input (read-line))
 
   (cond
